@@ -5,14 +5,14 @@ const products = [{name: 'Gorra de rodilla', sellCount: 10},{name: 'Pantalón de
 for (let i = 0; i < products.length; i++) {
     const productActual = products[i]
 
-    if (products.sellCount > 20) {
+    if (products[i].sellCount > 20) {
         goodProducts.push(products)
     }else {
         badProducts.push(products)
     }
 }
 
-console.log('Productos con más de 20 ventas:', goodProducts);
-console.log('Prodctos con menos de 20 ventas:', badProducts);
+console.log('Productos con más de 20 ventas:', goodProducts.length);
+console.log('Prodctos con menos de 20 ventas:', badProducts.length);
 
-//no me aparece el resultado!
+
