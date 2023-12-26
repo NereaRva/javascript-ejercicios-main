@@ -8,5 +8,4 @@ function toFilterStreamers() {
     console.log(filterStreamers);
 }
 
-document.getElementById('filterInput').addEventListener('input', toFilterStreamers);
-
+document.getElementById('filterInputButton').addEventListener('click', toFilterStreamers);
